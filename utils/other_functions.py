@@ -1,3 +1,5 @@
+import random
+
 def cleaning_html_response(response: str) -> str:
     """ This function cleans the response from the model by extracting the text between the <div> tags """
     start = response.find("<div>")
@@ -12,3 +14,6 @@ def cleaning_html_response(response: str) -> str:
 
 
 
+def select_rand_api_key(api_keys: list[str]) -> str:
+    """ This function selects a random API key from the list of API keys """
+    return random.choice(api_keys)

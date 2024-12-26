@@ -17,8 +17,7 @@ The user has provided the following information given in the tripple back ticks 
 '''{user_height} feet'''
 '''{user_weight} kg'''
 
-### Always keep response in markdown format, add appropiate headings and sort text in paragrpah.
-DO not repeat the user input in the response.
+Format response as strictly markdown. Don't repeat the user given data.
 
 
 
@@ -38,8 +37,9 @@ these words given in square brackets [Positive, Negative, Neutral].
 4. ONLY discuss topics directly related to product review. If a question is outside this scope, politely redirect the user back to product review.
 
 
-### Always keep response in markdown format, add appropiate headings and sort text in paragrpah .
-## DO not repeat the user input in the response.
+Format response as strictly markdown. Don't repeat the user given data.
+
+
 
 The review  and product title is given in triple backticks:
 ```{product_title}```
@@ -61,6 +61,7 @@ You are an advanced Emotion-to-Art Generator. Your purpose is to translate human
 - **Style**: Optional. A specific artistic style or tone (e.g., romantic, abstract, surreal).
 - **Context**: Optional. Any additional details about the subject or scenario.
 - **Language**: The desired language for the output, description also write context in that language and also desc and context (e.g., English, Spanish, French).
+- Format response as strictly markdown. DO not repeat the user given data.
 
 Data:
 
@@ -69,11 +70,6 @@ Data:
   "style": {style},
   "language": {language},
   "context": {context}
-
-
-### Always keep response in markdown format, add appropiate headings and sort text in paragrpah.
-
-DO not repeat the user input in the response.
 
 """
 
@@ -95,7 +91,7 @@ The user has provided the following Python code snippet and language in the trip
 
 ```{code_input}```
 
-### Always keep response in markdown format, add appropiate headings and sort text in paragrpah.
-DO not repeat the user input in the response.
+Format response as strictly markdown. Don't repeat the given data.
+
 
 """

@@ -17,58 +17,10 @@ The user has provided the following information given in the tripple back ticks 
 '''{user_height} feet'''
 '''{user_weight} kg'''
 
-Format response as HTML and place everything inside a <div> element.
-
-please see this example to understand how to format the response in HTML:
-
-<div>
-  <h1>Diet Analysis and Plan</h1>
-
-  <p>Based on your input, here's a breakdown of your dietary intake and a suggested weight loss plan:</p>
-
-  <h2>Calorie Calculation</h2>
-  <p>You mentioned eating a KFC Mighty Zinger Burger, fries, and a coke.  Let's estimate the calorie count for each:</p>
-  <ul>
-    <li><strong>KFC Mighty Zinger Burger:</strong> Approximately 550-600 calories (This varies slightly depending on location and preparation)</li>
-    <li><strong>KFC Fries (medium):</strong> Approximately 350-400 calories (Again, this is an estimate and portion size matters)</li>
-    <li><strong>Coke (12 oz):</strong> Approximately 150 calories</li>
-  </ul>
-  <p><strong>Total Estimated Calorie Intake:</strong> 1050 - 1150 calories (This is a range due to variations in portion sizes and preparation methods.  To get a more precise calculation, you would need to specify the exact sizes of the fries and coke and the specific restaurant's nutritional information)</p>
+### Always keep response in markdown format, add appropiate headings and sort text in paragrpah.
+DO not repeat the user input in the response.
 
 
-  <h2>BMI Calculation and Weight Status</h2>
-  <p>Your height is 5.8 feet, which is approximately 176.78 cm (5.8 * 30.48).</p>
-  <p>Your weight is 80 kg.</p>
-  <p>Your BMI (Body Mass Index) is calculated as weight (kg) / height (m)^2:</p>
-  <p>BMI = 80 / (1.77)^2 ≈ 25.5</p>
-  <p><strong>Based on your BMI of 25.5, you are currently in the overweight category.</strong>  A BMI between 18.5 and 24.9 is considered normal weight.</p>
-
-
-  <h2>Suggested Weight Loss Diet Plan</h2>
-  <p>This is a <i>sample</i> plan.  It's crucial to consult a doctor or registered dietitian before starting any weight loss program.  They can create a personalized plan based on your individual needs and health conditions.</p>
-
-  <p>This plan focuses on a calorie deficit to promote gradual weight loss. Remember that consistent exercise is also vital for successful and healthy weight management.</p>
-
-  <h3>Daily Calorie Goal (Example):</h3>
-  <p>To lose weight gradually and healthily, aim for a daily calorie deficit of 500-750 calories.  This would mean consuming approximately 1500-1800 calories per day, depending on your activity level.  This is an example, and your individual needs may differ.</p>
-
-  <h3>Sample Meal Plan (1500 Calories - Adjust Based on Your Needs):</h3>
-  <p>(This is a sample and portion sizes need to be adjusted based on individual caloric needs and preferences.  Consider lean protein sources, whole grains, and plenty of fruits and vegetables.)</p>
-  <ul>
-    <li><strong>Breakfast (approx. 350 calories):</strong> Oatmeal with berries and nuts</li>
-    <li><strong>Lunch (approx. 450 calories):</strong> Salad with grilled chicken or fish</li>
-    <li><strong>Dinner (approx. 500 calories):</strong> Baked salmon with steamed vegetables and brown rice</li>
-    <li><strong>Snacks (approx. 200 calories):</strong> Fruits, vegetables, yogurt</li>
-  </ul>
-
-  <p><strong>Important Notes:</strong></p>
-  <ul>
-    <li>This is a sample plan and calorie counts are estimates.  Consult a professional for personalized advice.</li>
-    <li>Hydration is key. Drink plenty of water throughout the day.</li>
-    <li>Regular exercise is essential for weight loss and overall health.</li>
-    <li>Focus on whole, unprocessed foods.</li>
-  </ul>
-</div>
 
 """
 
@@ -86,13 +38,8 @@ these words given in square brackets [Positive, Negative, Neutral].
 4. ONLY discuss topics directly related to product review. If a question is outside this scope, politely redirect the user back to product review.
 
 
-Format response as HTML and place everything inside a <div> element.
-use <h2></h2> for following headings:
-1. Product
-2. Review Summary
-3. Sentiment
-4. Highlights
-
+### Always keep response in markdown format, add appropiate headings and sort text in paragrpah .
+## DO not repeat the user input in the response.
 
 The review  and product title is given in triple backticks:
 ```{product_title}```
@@ -124,13 +71,9 @@ Data:
   "context": {context}
 
 
-### Format response as HTML and place everything inside a <div> element.
-use <h2></h2> for following headings:
-1. emotion
-2. art_form,
-3. style
-4. language
-5. context
+### Always keep response in markdown format, add appropiate headings and sort text in paragrpah.
+
+DO not repeat the user input in the response.
 
 """
 
@@ -152,6 +95,7 @@ The user has provided the following Python code snippet and language in the trip
 
 ```{code_input}```
 
-### Format response as HTML and place everything inside a <div> element that can  be used in a website.
+### Always keep response in markdown format, add appropiate headings and sort text in paragrpah.
+DO not repeat the user input in the response.
 
 """

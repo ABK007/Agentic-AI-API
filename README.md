@@ -47,8 +47,10 @@ It integrates with Google LLM Gemini-Flash-1.5 model for generating content.
 
 2. **Run the Docker container:**
 
+    First create .env file inside the project folder and add api keys for the LLM Model being used.
+
     ```sh
-    docker run -p 8000:8000 agentic-ai-api
+    docker run -d -p 8000:8000 --env-file .env agentic-ai-api
     ```
 
 3. **Access the api:**

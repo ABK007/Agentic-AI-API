@@ -11,7 +11,8 @@ def diet_plan(user: UserNutritionData):
     
     prompt: str = nutritionist_prompt(user_diet=user.userInput, 
                                       user_height=user.height, 
-                                      user_weight=user.weight) # Generate the prompt
+                                      user_weight=user.weight,
+                                      user_language=user.language) # Generate the prompt
     
     response: str = call_llm(prompt) # Call the model
 

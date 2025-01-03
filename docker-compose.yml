@@ -1,0 +1,17 @@
+services:
+  web:
+    image: agentic-ai-api
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.ai-project.rule=Host(`ai-project-api.abubakarkhalid.com`)"
+      - "traefik.http.routers.ai-project.entrypoints=websecure"
+      - "traefik.http.routers.ai-project.tls=true"
+      - "traefik.http.routers.ai-project.tls.certresolver=myresolver"
+    networks:
+      - traefik
+    env_file:
+      - .env
+    command: ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
+networks:
+  traefik:
+    external: true
